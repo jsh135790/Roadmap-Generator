@@ -1,8 +1,12 @@
 # Roadmap Generator - 路线图生成器
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjsh135790%2Froadmap-generator)
+![Vercel Deployment](https://img.shields.io/vercel/deploy/jsh135790/roadmap-generator?style=flat-square)
+[![Vercel](https://img.shields.io/vercel/v/roadmap-generator?style=for-the-badge&logo=vercel)](https://roadmap-generator-lac.vercel.app/)
+
 一个现代化、界面美观的开发路线图生成器，支持多主题切换、拖拽排序、图标选择和图片导出功能。
 
-![Roadmap Generator](https://via.placeholder.com/1200x630/3b82f6/ffffff?text=Roadmap+Generator)
+![Roadmap Generator](https://imgur.com/a/fyf3la7)
 
 ## ✨ 功能特性
 
@@ -15,11 +19,11 @@
 
 ### 🎨 主题系统
 - **5 种预设主题**：
-  - 🌊 海洋蓝 (Ocean Blue)
-  - 🌲 森林绿 (Forest Green)
-  - 🌅 日落橙 (Sunset Orange)
-  - 💜 梦幻紫 (Purple Dream)
-  - 🌙 暗黑模式 (Dark Mode)
+  - 海洋蓝 (Ocean Blue)
+  - 森林绿 (Forest Green)
+  - 日落橙 (Sunset Orange)
+  - 梦幻紫 (Purple Dream)
+  - 暗黑模式 (Dark Mode)
 - **一键切换**：点击主题图标快速切换主题
 - **主题持久化**：自动记忆用户选择的主题
 
@@ -35,10 +39,6 @@
 - **多种比例**：自适应、4:3、16:9、1:1、3:4、9:16
 - **自定义文件名**：自定义导出文件的名称
 
-### 📱 响应式设计
-- **桌面端**：三栏布局（设置、预览、编辑）
-- **移动端**：自适应为底部标签页切换
-
 ## 🛠 技术栈
 
 | 类别 | 技术 |
@@ -52,58 +52,6 @@
 | UI 组件库 | Reka UI + 自定义组件 |
 | 图标库 | Iconify + Material Design Icons |
 | 字体 | Inter |
-
-## 📁 项目结构
-
-```
-roadmap-generator/
-├── src/
-│   ├── main.ts                 # 应用入口
-│   ├── App.vue                # 主应用组件
-│   ├── assets/
-│   │   └── main.css           # 全局样式
-│   ├── components/
-│   │   ├── editor/            # 编辑相关组件
-│   │   │   ├── IconPicker.vue     # 图标选择器
-│   │   │   ├── NodeCard.vue       # 节点卡片
-│   │   │   ├── NodeForm.vue       # 节点表单
-│   │   │   └── RoadmapEditor.vue  # 路线图编辑器
-│   │   ├── preview/           # 预览相关组件
-│   │   │   ├── ExportCanvas.vue   # 导出画布
-│   │   │   ├── ExportModal.vue    # 导出弹窗
-│   │   │   └── RoadmapPreview.vue # 路线图预览
-│   │   ├── settings/         # 设置相关组件
-│   │   │   ├── BrandSettings.vue  # 品牌设置
-│   │   │   └── ThemeSelector.vue  # 主题选择器
-│   │   └── ui/               # 通用 UI 组件
-│   │       ├── badge/        # 徽章组件
-│   │       ├── button/       # 按钮组件
-│   │       ├── card/        # 卡片组件
-│   │       ├── dialog/       # 对话框组件
-│   │       ├── input/        # 输入框组件
-│   │       ├── label/        # 标签组件
-│   │       ├── radio-group/  # 单选组组件
-│   │       ├── select/       # 选择器组件
-│   │       ├── switch/       # 开关组件
-│   │       ├── textarea/     # 文本域组件
-│   │       └── tooltip/      # 提示框组件
-│   ├── composables/
-│   │   ├── useExport.ts      # 导出功能
-│   │   └── useStorage.ts    # 持久化存储
-│   ├── stores/
-│   │   ├── brand.ts          # 品牌状态管理
-│   │   ├── roadmap.ts        # 路线图状态管理
-│   │   └── theme.ts          # 主题状态管理
-│   ├── types/
-│   │   └── index.ts          # 类型定义
-│   └── lib/
-│       └── utils.ts          # 工具函数
-├── index.html                 # HTML 入口
-├── package.json               # 项目配置
-├── vite.config.ts            # Vite 配置
-├── tsconfig.json             # TypeScript 配置
-└── tailwind.config.js        # Tailwind CSS 配置
-```
 
 ## 🚀 快速开始
 
@@ -192,29 +140,6 @@ pnpm preview
 | 🔄 进行中 | 蓝色 | 正在进行的任务或阶段 |
 | ⏳ 待开始 | 灰色 | 尚未开始的任务或阶段 |
 
-## 📐 主题颜色配置
-
-每个主题都包含以下颜色配置：
-- 主色调 (primary)
-- 主色调悬停态 (primaryHover)
-- 次要色 (secondary)
-- 背景色 (background)
-- 表面色 (surface)
-- 提升表面色 (surfaceElevated)
-- 文字色 (text)
-- 次要文字色 (textSecondary)
-- 强调色 (accent)
-- 边框色 (border)
-- 节点状态色 (pending/progress/completed)
-
-## 💾 数据持久化
-
-应用使用 localStorage 自动保存以下数据：
-- 路线图节点数据
-- 品牌设置（Logo、头像、昵称）
-- 当前主题
-- 用户偏好设置
-
 ## 🔧 自定义配置
 
 ### 添加新主题
@@ -251,6 +176,81 @@ const iconCategories: IconCategory[] = [
 ]
 ```
 
+## 📁 项目结构
+
+```
+roadmap-generator/
+├── src/
+│   ├── main.ts                 # 应用入口
+│   ├── App.vue                # 主应用组件
+│   ├── assets/
+│   │   └── main.css           # 全局样式
+│   ├── components/
+│   │   ├── editor/            # 编辑相关组件
+│   │   │   ├── IconPicker.vue     # 图标选择器
+│   │   │   ├── NodeCard.vue       # 节点卡片
+│   │   │   ├── NodeForm.vue       # 节点表单
+│   │   │   └── RoadmapEditor.vue  # 路线图编辑器
+│   │   ├── preview/           # 预览相关组件
+│   │   │   ├── ExportCanvas.vue   # 导出画布
+│   │   │   ├── ExportModal.vue    # 导出弹窗
+│   │   │   └── RoadmapPreview.vue # 路线图预览
+│   │   ├── settings/         # 设置相关组件
+│   │   │   ├── BrandSettings.vue  # 品牌设置
+│   │   │   └── ThemeSelector.vue  # 主题选择器
+│   │   └── ui/               # 通用 UI 组件
+│   │       ├── badge/        # 徽章组件
+│   │       ├── button/       # 按钮组件
+│   │       ├── card/        # 卡片组件
+│   │       ├── dialog/       # 对话框组件
+│   │       ├── input/        # 输入框组件
+│   │       ├── label/        # 标签组件
+│   │       ├── radio-group/  # 单选组组件
+│   │       ├── select/       # 选择器组件
+│   │       ├── switch/       # 开关组件
+│   │       ├── textarea/     # 文本域组件
+│   │       └── tooltip/      # 提示框组件
+│   ├── composables/
+│   │   ├── useExport.ts      # 导出功能
+│   │   └── useStorage.ts    # 持久化存储
+│   ├── stores/
+│   │   ├── brand.ts          # 品牌状态管理
+│   │   ├── roadmap.ts        # 路线图状态管理
+│   │   └── theme.ts          # 主题状态管理
+│   ├── types/
+│   │   └── index.ts          # 类型定义
+│   └── lib/
+│       └── utils.ts          # 工具函数
+├── index.html                 # HTML 入口
+├── package.json               # 项目配置
+├── vite.config.ts            # Vite 配置
+├── tsconfig.json             # TypeScript 配置
+└── tailwind.config.js        # Tailwind CSS 配置
+```
+
+## 📐 主题颜色配置
+
+每个主题都包含以下颜色配置：
+- 主色调 (primary)
+- 主色调悬停态 (primaryHover)
+- 次要色 (secondary)
+- 背景色 (background)
+- 表面色 (surface)
+- 提升表面色 (surfaceElevated)
+- 文字色 (text)
+- 次要文字色 (textSecondary)
+- 强调色 (accent)
+- 边框色 (border)
+- 节点状态色 (pending/progress/completed)
+
+## 💾 数据持久化
+
+应用使用 localStorage 自动保存以下数据：
+- 路线图节点数据
+- 品牌设置（Logo、头像、昵称）
+- 当前主题
+- 用户偏好设置
+
 ## 🤝 贡献指南
 
 1. Fork 本仓库
@@ -266,14 +266,12 @@ const iconCategories: IconCategory[] = [
 ## 🙏 致谢
 
 - [Vue.js](https://vuejs.org/) - 渐进式 JavaScript 框架
+- [Vercel](https://vercel.com/) - 零配置部署平台
 - [Tailwind CSS](https://tailwindcss.com/) - 实用优先的 CSS 框架
+- [shadcn-vue](https://www.shadcn-vue.com/) - 美观的 Vue 组件库
 - [Iconify](https://iconify.design/) - 图标合集
 - [html2canvas](https://html2canvas.hertzen.com/) - HTML 转 Canvas 库
 - [Vue Draggable Plus](https://vue-draggable-plus.github.io/) - Vue 拖拽排序组件
-
-## 📞 联系方式
-
-- GitHub: [https://github.com/yourusername/roadmap-generator](https://github.com/yourusername/roadmap-generator)
 
 ---
 
