@@ -1,12 +1,10 @@
 # Roadmap Generator - 路线图生成器
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fjsh135790%2Froadmap-generator)
-![Vercel Deployment](https://img.shields.io/vercel/deploy/jsh135790/roadmap-generator?style=flat-square)
-[![Vercel](https://img.shields.io/vercel/v/roadmap-generator?style=for-the-badge&logo=vercel)](https://roadmap-generator-lac.vercel.app/)
 
 一个现代化、界面美观的开发路线图生成器，支持多主题切换、拖拽排序、图标选择和图片导出功能。
 
-![Roadmap Generator](https://imgur.com/a/fyf3la7)
+![Roadmap Generator](https://i.imgur.com/zCQ62x6.png)
 
 ## ✨ 功能特性
 
