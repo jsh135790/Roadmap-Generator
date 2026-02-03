@@ -47,7 +47,7 @@
 | 样式方案 | Tailwind CSS 4 |
 | 拖拽组件 | Vue Draggable Plus |
 | 导出引擎 | html2canvas |
-| UI 组件库 | Reka UI + 自定义组件 |
+| UI 组件库 | Reka UI + Shadcn/ui-vue + 自定义组件 |
 | 图标库 | Iconify + Material Design Icons |
 | 字体 | Inter |
 
@@ -274,5 +274,5 @@ roadmap-generator/
 ---
 
 <p align="center">
-  Made with ❤️ by Developer
+  Made with ❤️ by Pilot1337
 </p>
