@@ -247,7 +247,7 @@ function selectIcon(icon: string) {
             v-for="icon in filteredIcons"
             :key="icon"
             :class="[
-              'p-2.5 rounded-lg border-2 transition-all hover:scale-105',
+              'w-9 h-9 flex items-center justify-center rounded-lg border-2 transition-all hover:scale-105',
               selectedIcon === icon
                 ? 'border-[var(--app-primary)] bg-[var(--app-primary)]/10'
                 : 'border-transparent hover:border-[var(--app-border)] hover:bg-[var(--app-surface-elevated)]',
@@ -274,7 +274,7 @@ function selectIcon(icon: string) {
               v-for="icon in category.icons"
               :key="icon"
               :class="[
-                'p-2.5 rounded-lg border-2 transition-all hover:scale-105',
+                'w-9 h-9 flex items-center justify-center rounded-lg border-2 transition-all hover:scale-105',
                 selectedIcon === icon
                   ? 'border-[var(--app-primary)] bg-[var(--app-primary)]/10'
                   : 'border-transparent hover:border-[var(--app-border)] hover:bg-[var(--app-surface-elevated)]',
